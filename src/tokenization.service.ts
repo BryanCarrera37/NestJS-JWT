@@ -5,7 +5,7 @@ import { ServerMessage } from "./const-values";
 import { JwtGenerationData } from "./interfaces";
 
 @Injectable()
-export class TokenizationHelperService {
+export class TokenizationService {
 
     constructor(
         private readonly jwtService: JwtService

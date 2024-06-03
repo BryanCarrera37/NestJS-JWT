@@ -1,13 +1,13 @@
 {
   "name": "@bryancm/nestjs-jwt",
-  "version": "1.0.0",
-  "description": "This is a library that can be used in your projects to implement actions for JWT. You will be able to generate tokens quickly, also you can extract the payload from it with a single line",
+  "version": "1.1.0",
+  "description": "This is a library made for your projects so that you can have a several functions that you can use to implement the Bearer Authentication.",
   "main": "index.js",
   "scripts": {
     "tsc:init": "tsc --init",
     "copy:files": "cp ./LICENSE ./dist/ && cp ./README.md ./dist/ && cp ./package.json ./dist/",
     "build": "rm -rf dist && tsc && npm run copy:files",
-    "publish": "cd dist/ && yarn publish"
+    "publish": "cd dist/ && yarn publish --access public"
   },
   "keywords": [
     "nest",
@@ -16,7 +16,8 @@
     "development",
     "jwt",
     "json",
-    "token"
+    "token",
+    "bearer"
   ],
   "repository": {
     "type": "git",

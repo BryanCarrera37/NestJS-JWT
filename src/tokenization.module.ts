@@ -1,8 +1,15 @@
 import { Module } from "@nestjs/common";
-import { TokenizationHelperService } from "./tokenization-helper.service";
+import { TokenizationService } from "./tokenization.service";
+import { JwtService } from "@nestjs/jwt";
 
 @Module({
-    exports: [ TokenizationHelperService ],
-    providers: [ TokenizationHelperService ]
+    exports: [
+        TokenizationService,
+        JwtService
+    ],
+    providers: [
+        TokenizationService,
+        JwtService
+    ]
 })
 export class TokenizationModule {}

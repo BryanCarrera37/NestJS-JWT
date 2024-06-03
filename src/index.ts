@@ -1,2 +1,2 @@
 export * from './tokenization.module';
-export * from './tokenization-helper.service';
+export * from './tokenization.service';
